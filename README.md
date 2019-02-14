@@ -1,10 +1,12 @@
-# OSC2DMX module design
+# Arduino OSC2DMX module design
 
 The simplest possible Arduino OSC to DMX controller. This is useful for situations when you just need to control one (or a few) LED stage light(s) from a computer, and want to set the red, green and blue levels independently.
 
 The Arduino design is simple and uses an ATmega328/2560 based Arduino (e.g., Arduino Uno/Mega) Ethernet shield and a commonly available MAX485 breakout board. It also supports a (not required) LCD screen to increase cool blinkenlights factor.
 
 The Arduino gives itself an IP address (`192.168.1.100`) which can be changed in the code.
+
+The circuit diagrams have been borrowed from the web for now (see circuit).
 
 ### OSC Message format
 
@@ -36,3 +38,6 @@ There's a Pd patch `OSC2DMX-test.pd` in the pd folder which shows how to control
 
 - Make this work with more modern boards (e.g., Leonardo or 32u4 based, ARM, etc.)
 - Support more than one independent light...
+- make a nicer circuit design example.
+- supply a 3D printed enclosure design.
+
