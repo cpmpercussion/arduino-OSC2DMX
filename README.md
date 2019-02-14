@@ -31,3 +31,8 @@ There's one Arduino script `lighting-module.ino`. The project is distributed in 
 ### Testing with Pure Data
 
 There's a Pd patch `OSC2DMX-test.pd` in the pd folder which shows how to control lights from Pd.
+
+## TODO:
+
+- Make this work with more modern boards (e.g., Leonardo or 32u4 based, ARM, etc.)
+- Support more than one independent light...
